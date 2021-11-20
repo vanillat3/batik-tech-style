@@ -2,6 +2,7 @@
 const loadAnimation = document.querySelector('.load-wrapper');
 window.addEventListener('load', function () {
   loadAnimation.parentElement.removeChild(loadAnimation);
+  location.reload()
 });
 
 // Mobile Nav
