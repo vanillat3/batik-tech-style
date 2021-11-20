@@ -2,8 +2,8 @@
 const loadAnimation = document.querySelector('.load-wrapper');
 window.addEventListener('load', function () {
   loadAnimation.parentElement.removeChild(loadAnimation);
-  location.reload()
 });
+location.reload()
 
 // Mobile Nav
 const burger = document.querySelector('.burger');
