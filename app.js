@@ -2,8 +2,13 @@
 const loadAnimation = document.querySelector('.load-wrapper');
 window.addEventListener('load', function () {
   loadAnimation.parentElement.removeChild(loadAnimation);
+  window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+  }
 });
-location.reload()
 
 // Mobile Nav
 const burger = document.querySelector('.burger');
